@@ -40,6 +40,8 @@ function Game() {
 
 	//Handle player
 	const handleClick = (i) => {
+		const newSquares = squares.slice
+		console.log(newSquares[i])
 		//check X or O
 		// calculate winner
 		// declare winner
