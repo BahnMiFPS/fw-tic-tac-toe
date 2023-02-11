@@ -40,6 +40,8 @@ function Game() {
 		return null
 	}
 
+
+  
 	//Handle player
 	const handleClick = (i) => {
 		const newSquares = squares.slice()
