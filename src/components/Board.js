@@ -5,7 +5,14 @@ export default function Board({ squares, handleClick }) {
 	return (
 		<div className="board">
 			<div>
-				<div className="board-row">"Your code here"</div>
+				<div className="board-row">
+					<Square
+						squares={"0"}
+						handleClick={() => {
+							handleClick(0)
+						}}
+					/>
+				</div>
 				<div className="board-row">"Your code here"</div>
 				<div className="board-row">"Your code here"</div>
 			</div>
