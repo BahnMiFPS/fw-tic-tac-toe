@@ -7,7 +7,7 @@ export default function Board({ squares, handleClick }) {
 			<div>
 				<div className="board-row">
 					<Square
-						value="0"
+						value={squares[0]}
 						handleClick={() => {
 							handleClick(0)
 						}}
