@@ -46,10 +46,10 @@ function Game() {
 		}
 
 		newSquares[i] = xIsNext ? "X" : "O"
-		//check X or O
+
 		setSquares(newSquares)
-		// calculate winner
-		// declare winner
+
+		setXIsNext((prevState) => !prevState)
 	}
 
 	//Restart game
