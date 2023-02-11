@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import Board from "./Board"
+import History from "./History"
 
 function Game() {
 	const [squares, setSquares] = useState(Array(9).fill(null))
@@ -40,8 +41,7 @@ function Game() {
 		return null
 	}
 
-
-  
+	const jumpTo = () => {}
 	//Handle player
 	const handleClick = (i) => {
 		const newSquares = squares.slice()
@@ -68,7 +68,7 @@ function Game() {
 			<h2 className="result">Winner is: {winner ? winner : "N/N"}</h2>
 			<div className="game">
 				<span className="player">Next player is: {xIsNext ? "X" : "O"}</span>
-				<Board squares={squares} handleClick={handleClick(squares)} />
+				<Board squares={squares} handleClick={handleClick} />
 			</div>
 			<button onClick={handlRestart} className="restart-btn">
 				Restart
