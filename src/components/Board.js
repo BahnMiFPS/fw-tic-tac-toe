@@ -9,16 +9,6 @@ export default function Board({ squares, handleClick }) {
 				<div className="board-row">"Your code here"</div>
 				<div className="board-row">"Your code here"</div>
 			</div>
-			<div>
-				<div className="board-row">"Your code here"</div>
-				<div className="board-row">"Your code here"</div>
-				<div className="board-row">"Your code here"</div>
-			</div>
-			<div>
-				<div className="board-row">"Your code here"</div>
-				<div className="board-row">"Your code here"</div>
-				<div className="board-row">"Your code here"</div>
-			</div>
 		</div>
 	)
 }
