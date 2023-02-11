@@ -39,9 +39,8 @@ function Game() {
 	}
 
 	//Handle player
-  const handleClick = (i) => {
+	const handleClick = (i) => {
 		//check X or O
-    (xIsNext ? : )
 		// calculate winner
 		// declare winner
 	}
@@ -49,8 +48,8 @@ function Game() {
 	//Restart game
 	const handlRestart = () => {
 		//remove history
-    setXIsNext(true)
-    setWinner(null)
+		setXIsNext(true)
+		setSquares(Array(9).fill(null))
 	}
 
 	return (
