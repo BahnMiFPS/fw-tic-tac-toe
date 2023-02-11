@@ -41,7 +41,11 @@ function Game() {
 	//Handle player
 	const handleClick = (i) => {
 		const newSquares = squares.slice()
-		console.log(newSquares)
+		if (calculateWinner(newSquares) || newSquares[i]) {
+			return
+		}
+
+		newSquares = xIsNext ? "X" : "O"
 		//check X or O
 		// calculate winner
 		// declare winner
