@@ -47,7 +47,8 @@ function Game() {
 
 		newSquares = xIsNext ? "X" : "O"
 		//check X or O
-		setSquares(newSquares[i])
+		setSquares(newSquares)
+
 		// calculate winner
 		// declare winner
 	}
