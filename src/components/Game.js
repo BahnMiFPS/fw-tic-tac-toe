@@ -8,6 +8,8 @@ function Game() {
 
 	//Declaring a Winner
 	useEffect(() => {
+		const newWinner = calculateWinner(squares)
+		setWinner(newWinner)
 		// render cai gi do depends on square
 	}, [squares])
 
